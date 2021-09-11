@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    font-family: Open Sans;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0 30px;
+    box-shadow: 0px 1px 20px rgba(159, 159, 159, 0.65);
+}
+
+.menu-header{
+    display: flex;
+    justify-content: space-around;
+    color:#777777;
+}
+
+.menu-header h2{
+    margin: 25px;
+}
+
+section{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: #575757;
+    font-weight: 900;
+}
+
+.formulario{
+    width: 100%;
+    margin: 10%;
+}
+
+#nome{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#email{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#telefone{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#integral-8h{
+    margin-right: 10%;
+}
+
+#half-4h{
+    margin-right: 10%;
+
+}
+
+.texto-lateral{
+    width: 100%;
+    margin: 10%;
+}
+
+#button-submit{
+    list-style: none;
+    width: 100%;
+    margin-top: 5%;
+    background-color: #C2185B;
+    color: white;
+}
