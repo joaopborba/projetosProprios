@@ -91,3 +91,41 @@ h1{
     background-color: #C2185B;
     color: white;
 }
+
+footer{
+    background-color: #C2185B;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer{
+    display: block;
+    flex-direction: column;
+}
+
+.logo-footer p{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-options{
+    display: flex;
+    color: white;
+}
+
+.column1{
+    margin-right: 30vh;
+}
+
+.column1 h5{
+    margin: 5%;
+}
+
+.column2{
+    margin-right: 40vh;
+}
+
+.column2 h5{
+    margin: 5% 0;
+}
