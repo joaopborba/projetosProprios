@@ -21,6 +21,7 @@ header{
 
 .menu-header h2{
     margin: 25px;
+    cursor: pointer;
 }
 
 section{
@@ -58,12 +59,24 @@ h1{
 }
 
 #integral-8h{
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 #half-4h{
-    margin-right: 10%;
+    margin-right: 5%;
 
+}
+
+#r-email{
+  margin-left: 10%
+}
+
+#r-ligacao{
+  margin-left: 10%
+}
+
+#r-whatsapp{
+  margin-left: 10%
 }
 
 .texto-lateral{
