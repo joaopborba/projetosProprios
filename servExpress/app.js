@@ -1,4 +1,6 @@
 const express = require("express");
+const rotasProduto = require("./routes/rotasProduto");
+const rotasPerfil = require("./routes/rotasPerfil");
 const app = express();
 
 app.get("/", (req,res)=>{
@@ -13,15 +15,8 @@ app.get("/contato", (req,res)=>{
     res.send({nome:"João Pedro", idade: 25, profissao: "Developer"});
 })
 
-app.get("/produtos/:id", (req,res)=>{
-    let {id} = req.params;
-    res.send("O produto pesquisado é o id: " + id);
-})
-
-app.get("/perfis/:id?", (req,res)=>{
-    let{id} = req.params;
-    res.send("O id procurado é: " + id);
-})
+app.use("/produtos", rotasProduto);
+app.use("/perfil", rotasPerfil);
 
 app.listen(3000, ()=>{
     console.log("Servidor rodando na porta 3000");
