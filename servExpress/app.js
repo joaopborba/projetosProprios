@@ -1,6 +1,7 @@
 const express = require("express");
 const rotasProduto = require("./routes/rotasProduto");
 const rotasPerfil = require("./routes/rotasPerfil");
+const rotasContato = require("./routes/rotasContato");
 const app = express();
 
 app.get("/", (req,res)=>{
@@ -11,10 +12,7 @@ app.get("/sobre", (req,res)=>{
     res.send("Sobre nós");
 })
 
-app.get("/contato", (req,res)=>{
-    res.send({nome:"João Pedro", idade: 25, profissao: "Developer"});
-})
-
+app.use("/contato", rotasContato);
 app.use("/produtos", rotasProduto);
 app.use("/perfil", rotasPerfil);
 
