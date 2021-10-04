@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contato</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>Contatos</h1>
+    <hr>
+
+    <%
+        let contato = [ 
+        {nome: "João", sobrenome: " Borba"}, 
+        {nome: "Maria" , sobrenome: "Silva"}
+        ];
+    %>
+
+        <ul>
+            <% for(let cont of contato){ %>
+                <li> Usuário: <%= cont.nome %> <%= cont.sobrenome %></li>
+            <% } %>
+        </ul>
+
+</body>
+
+</html>
