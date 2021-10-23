@@ -1,0 +1,1 @@
+O usuário entrou na url: /produtos/O usuário entrou na url: /produtos/deletar/1?_method=DELETE
