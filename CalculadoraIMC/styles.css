@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -13,37 +17,40 @@ main{
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 400px;
-    height: 600px;
+    height: 700px;
     align-items: center;
-    justify-content: space-evenly;
     border-radius: 30px;
     background-color: gainsboro;
 }
 
 .titulo{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 50px;;
+    height: 50px;
     text-align: center;
-    font: bold 1.5rem serif;
     border-bottom: 2px solid;
+    font: bold 1.5rem ubuntu;
 }
 
 .input label{
     display: flex;
     align-items: center;
-    font: bold 1.2rem serif;
-    margin: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    font: bold 1.2rem ubuntu;
 }
 
 .input input{
     display: flex;
     width: 200px;
-    height: 40px;
-    justify-content: space-between;
+    height: 30px;
     align-items: center;
     border-radius: 5px;
-    font: bold 1rem serif;
+    font-size: 15px;
+    margin: 10px;
 }
 
 .input button{
@@ -52,8 +59,10 @@ main{
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font: bold 1rem serif;
     background-color: cadetblue;
+    text-transform: uppercase;
+    font: bold 1.5rem ubuntu;
+    margin-top: 50px;
 }
 
 button:hover{
@@ -62,6 +71,17 @@ button:hover{
 }
 
 button:active{
-    border: groove;
-    border-color: black;
+    box-shadow: 0px 0px 10px black;
+}
+
+.result{
+    display: flex;
+    width: 350px;
+    height: 150px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 70px;
+    box-shadow: 0px 0px 10px black;
+    color: gainsboro;
+    padding: 10px;
 }
